@@ -31,6 +31,8 @@ library(knitr)
 library(faraway)
 data(worldcup)
 
+head(worldcup)
+
 table_example <- worldcup %>% 
   slice(1:6) %>% 
   select(Team, Position, Time, Shots)
