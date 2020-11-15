@@ -33,7 +33,7 @@ data(worldcup)
 
 table_example <- worldcup %>% 
   slice(1:5) %>% 
-  select(Team, Position, Time)
+  select(Team, Position, Time, Shots)
 
 kable(table_example)
 ```
