@@ -1,0 +1,43 @@
+---
+title: "One example of RMarkdown"
+author: "Brooke Anderson"
+date: "9/21/2020"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+## Example equation
+
+Here is an example equation:
+
+$$
+E(Y_t) \sim \alpha + \beta X_t
+$$
+We have data for $Y_t$.
+
+$$
+\sum _{i=1}^{n}2^{i}
+$$
+
+
+
+## Example table
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(faraway)
+data(worldcup)
+
+table_example <- worldcup %>% 
+  slice(1:3) %>% 
+  select(Team, Position, Time)
+
+kable(table_example)
+```
+
+
+
+
