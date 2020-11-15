@@ -13,7 +13,7 @@ output:
 Here is an example equation:
 
 $$
-E(Y_t) \sim \alpha + \beta X_t
+E(Y_t) \sim \alpha + \beta X_t + \gamma Z_t
 $$
 We have data for $Y_t$.
 
